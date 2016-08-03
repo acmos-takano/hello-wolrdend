@@ -2,3 +2,4 @@
 konnitiwawa
 sayounara
 gou-ranga
+nande!?
