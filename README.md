@@ -4,3 +4,4 @@ sayounara
 gou-ranga
 nande!?
 Ninja Nande!?
+Aieeeeee!!
