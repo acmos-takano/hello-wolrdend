@@ -7,15 +7,15 @@ import (
 )
 
 // comment
-func s1(x, y int) string {
+func S1(x, y int) string {
 	s1 := fmt.Sprintf("%d:%d", x, y)
 	return s1
 }
 
-func s2(x, y int) int {
+func S2(x, y int) int {
 	return 10
 }
 
-func s3(x, y int) int {
-	return sample2.s2_2()
+func S3(x, y int) int {
+	return sample2.S2_2()
 }

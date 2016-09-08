@@ -1,9 +1,11 @@
 package sample2
 
-func s2_2() int {
+// S2_2:dummy
+func S2_2() int {
 	return 100
 }
 
-func s2_3() int {
+// S2_3:dummy
+func S2_3() int {
 	return 200
 }
