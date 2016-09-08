@@ -2,7 +2,8 @@ package sample
 
 import (
 	"fmt"
-	"sample2"
+
+	"../sample2" // サンプル：自分の別パッケージを指定する場合の相対パス。ただしGOPATH配下では使えない
 )
 
 // comment
