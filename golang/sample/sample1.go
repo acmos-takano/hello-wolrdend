@@ -2,6 +2,7 @@ package sample
 
 import (
 	"fmt"
+	"sample2"
 )
 
 func s1(x, y int) string {
@@ -14,5 +15,5 @@ func s2(x, y int) int {
 }
 
 func s3(x, y int) int {
-	return 20
+	return sample2.s2_2()
 }
