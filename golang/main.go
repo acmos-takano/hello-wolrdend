@@ -9,8 +9,8 @@ import (
 
 func main() {
 
-	a := sample.S1(111, 999)
-	b := sample2.S2_2()
+	a := sample.S3(111, 999)
+	b := sample2.S2_3()
 	fmt.Println(a)
 	fmt.Println(b)
 }
