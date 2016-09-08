@@ -14,8 +14,7 @@ func S1(x, y int) string {
 
 // S2: int
 func S2(x, y int) int {
-	return 10
-
+	return 100
 }
 
 // S3: string
