@@ -5,6 +5,7 @@ import (
 	"sample2"
 )
 
+// comment
 func s1(x, y int) string {
 	s1 := fmt.Sprintf("%d:%d", x, y)
 	return s1
