@@ -39,3 +39,43 @@ func TestS1(t *testing.T) {
 		}
 	}
 }
+
+// TestS2:test for S2()
+func TestS2(t *testing.T) {
+	var x, y int
+	var i interface{}
+
+	for _, data := range testData {
+		x = data.x
+		y = data.y
+		i = S2(x, y)
+		i2, err := i.(int)
+
+		// ここでテスト結果を誤るとどうしようもない
+		if !err {
+			t.Errorf("is not True1.%s", data.comment)
+		}
+		if i2 != 100 {
+			t.Errorf("is not True2.%s", data.comment)
+		}
+
+	}
+}
+
+// TestS3:test for S3()
+func TestS3(t *testing.T) {
+	var x, y int
+	var i interface{}
+
+	for _, data := range testData {
+		x = data.x
+		y = data.y
+		i = S3(x, y)
+		_, err := i.(string)
+
+		// ここでテスト結果を誤るとどうしようもない
+		if !err {
+			t.Errorf("is not True.%s", data.comment)
+		}
+	}
+}
