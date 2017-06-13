@@ -10,5 +10,6 @@ func Testmain(t *testing.T) {
 
 	fmt.Println("test")
 	fmt.Println("test2")
+	fmt.Println("test3")
 
 }
