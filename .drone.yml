@@ -4,4 +4,4 @@ pipeline:
     commands:
 #      - go get
       - go build
-      - go test -vvv -cover
+      - go test -v -cover
