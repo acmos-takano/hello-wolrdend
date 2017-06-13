@@ -19,4 +19,5 @@ func TestMain(t *testing.T) {
 	fmt.Println("kkk")
 	fmt.Println("lll")
 	fmt.Println("mmm")
+	fmt.Println("nnn")
 }
