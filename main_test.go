@@ -20,5 +20,5 @@ func TestMain(t *testing.T) {
 	fmt.Println("lll")
 	fmt.Println("mmm")
 	fmt.Println("nnn")
-	fmt.Println("ooo")
+	fmt.Println("ppp")
 }
