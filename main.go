@@ -10,5 +10,6 @@ func main() {
 	hellandheaven := "string"
 	fmt.Println(a)
 	fmt.Println(hellandheaven)
+	fmt.Println(hellandheaven)
 
 }
