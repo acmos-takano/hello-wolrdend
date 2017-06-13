@@ -22,4 +22,5 @@ func TestMain(t *testing.T) {
 	fmt.Println("nnn")
 	fmt.Println("ppp")
 	fmt.Println("qqq")
+	fmt.Println("rrr")
 }
