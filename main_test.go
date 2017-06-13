@@ -7,4 +7,5 @@ import (
 
 func TestMain(t *testing.T) {
 	fmt.Println("aaa")
+	fmt.Println("bbb")
 }
