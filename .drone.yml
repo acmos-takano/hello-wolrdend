@@ -3,5 +3,5 @@ pipeline:
     image: golang
     commands:
 #      - go get
-#      - go build
+      - go build
       - go test -vvv -cover
