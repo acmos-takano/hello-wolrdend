@@ -8,4 +8,5 @@ import (
 func TestMain(t *testing.T) {
 	fmt.Println("ooo")
 	fmt.Println("ppp")
+	fmt.Println("qqq")
 }
