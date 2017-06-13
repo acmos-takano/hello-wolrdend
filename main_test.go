@@ -17,4 +17,5 @@ func TestMain(t *testing.T) {
 	fmt.Println("www")
 	fmt.Println("xxx")
 	fmt.Println("yyy")
+	fmt.Println("zzz")
 }
