@@ -8,7 +8,7 @@ import (
 // TestS1:test for S1()
 func Testmain(t *testing.T) {
 
-	// 何もせずに正常ケース
 	fmt.Println("test")
+	fmt.Println("test2")
 
 }
