@@ -6,16 +6,5 @@ import (
 )
 
 func TestMain(t *testing.T) {
-	fmt.Println("ooo")
-	fmt.Println("ppp")
-	fmt.Println("qqq")
-	fmt.Println("rrr")
-	fmt.Println("sss")
-	fmt.Println("ttt")
-	fmt.Println("uuu")
-	fmt.Println("vvv")
-	fmt.Println("www")
-	fmt.Println("xxx")
-	fmt.Println("yyy")
-	fmt.Println("zzz")
+	fmt.Println("aaa")
 }
