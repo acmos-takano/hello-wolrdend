@@ -1,6 +1,8 @@
 package main
 
+import "fmt"
+
 func main() {
-	println("test")
-	println("test2")
+	fmt.Println("test")
+	fmt.Println("test2")
 }
