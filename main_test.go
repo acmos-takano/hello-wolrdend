@@ -11,4 +11,7 @@ func TestMain(t *testing.T) {
 	fmt.Println("ccc")
 	fmt.Println("ddd")
 	fmt.Println("eee-2")
+
+	t.Error("aaa")
+
 }
