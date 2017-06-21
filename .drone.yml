@@ -14,3 +14,5 @@ pipeline:
       skip_verify: true
       recipients:
         - takano@acmos.jp
+      when:
+        status: [ success, failure ]
