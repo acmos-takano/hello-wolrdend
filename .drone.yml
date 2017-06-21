@@ -15,5 +15,5 @@ pipeline:
       recipients:
         - takano@acmos.jp
       when:
-        push: acmos-takan
+        push: acmos-takano
 #        status: [ success, failure ]
