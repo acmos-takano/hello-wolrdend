@@ -2,14 +2,15 @@ pipeline:
   build:
     image: golang
     commands:
-#      - go get
+      - go get
       - go build
       - go test -v
 
   notify:
       image: drillster/drone-email
       from: drone@root
-      host: mailredirector.newbiz.acmos.jp:25001
+      host: mailredirector.newbiz.acmos.jp
+      port: 25001
       skip_verify: true
       recipients:
         - takano@acmos.jp
