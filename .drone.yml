@@ -6,10 +6,10 @@ pipeline:
       - go build
       - go test -v
 
-notify:
-  email:
-    from: drone@root
-    host: mailredirector.newbiz.acmos.jp:25001
-    skip_verify: true
-    recipients:
-      - takano@acmos.jp
+  notify:
+      image: drillster/drone-email
+      from: drone@root
+      host: mailredirector.newbiz.acmos.jp:25001
+      skip_verify: true
+      recipients:
+        - takano@acmos.jp
