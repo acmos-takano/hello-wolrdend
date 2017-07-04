@@ -11,8 +11,7 @@ func TestMain(t *testing.T) {
 	fmt.Println("ccc")
 	fmt.Println("ddd")
 	fmt.Println("eee-2")
-	fmt.Println("drone-0.5-9")
-	fmt.Println("drone-0.5-10")
+	fmt.Println("drone-slack-06")
 
 	// t.Error("aaa")
 
