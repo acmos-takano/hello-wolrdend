@@ -9,7 +9,7 @@ pipeline:
   notify:
     image: plugins/drone-slack
     webhook_url: https://hooks.slack.com/services/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
-    channel: droneテスト
+    channel: drone-test
     username: aki
     when:
       status: [ success, failure ]
