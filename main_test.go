@@ -13,6 +13,6 @@ func TestMain(t *testing.T) {
 	fmt.Println("eee-2")
 	fmt.Println("drone-0.6-8")
 
-	t.Error("aaa")
+	// t.Error("aaa")
 
 }
