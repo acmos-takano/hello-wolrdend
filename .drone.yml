@@ -7,7 +7,8 @@ pipeline:
       - go test -v
 
   notify:
-    image: plugins/drone-slack
+#    image: plugins/drone-slack
+    image: plugins/slack
     webhook_url: https://hooks.slack.com/services/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
     channel: drone-test
     username: incoming-webhook
