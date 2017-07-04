@@ -8,7 +8,7 @@ pipeline:
 
   notify:
       image: drillster/drone-email
-      from: agent@newbiz.acmos.jp
+      from: takano@acmos.jp
       host: mailredirector.newbiz.acmos.jp
       port: 25001
       skip_verify: true
