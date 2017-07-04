@@ -11,8 +11,8 @@ pipeline:
     webhook_url: https://hooks.slack.com/services/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
     channel: drone-test
     username: incoming-webhook
-    when:
-      status: [ success, failure ]
+#    when:
+#      status: [ success, failure ]
 #      image: drillster/drone-email
 #      from: takano@acmos.jp
 #      host: mailredirector.newbiz.acmos.jp
