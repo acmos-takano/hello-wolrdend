@@ -3,24 +3,28 @@ pipeline:
     image: golang
     commands:
 #      - go get
+      - sleep 10
       - go build
       - go test -v
 
+services:
+    database:
+      image: postgresql
+
   notify:
 #    image: plugins/drone-slack
-    image: plugins/slack
-    webhook: https://hooks.slack.com/services/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
-    channel: drone-test
-    username: incoming-webhook
+#    image: plugins/slack
+#    webhook: https://hooks.slack.com/services/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
+#    username: incoming-webhook
 #    when:
 #      status: [ success, failure ]
-#      image: drillster/drone-email
-#      from: takano@acmos.jp
-#      host: mailredirector.newbiz.acmos.jp
-#      port: 25001
-#      skip_verify: true
-##      recipients:
-##        - takano@acmos.jp
+    image: drillster/drone-email
+    from: takano@acmos.jp
+    host: mailredirector.newbiz.acmos.jp
+    port: 25001
+    skip_verify: true
+#      recipients:
+#        - takano@acmos.jp
 #      when:
 #       push: acmos-takano
-##        status: [ success, failure ]
+#        status: [ success, failure ]
