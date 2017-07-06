@@ -7,10 +7,6 @@ pipeline:
       - go build
       - go test -v
 
-services:
-    database:
-      image: postgresql
-
   notify:
 #    image: plugins/drone-slack
 #    image: plugins/slack
@@ -28,3 +24,8 @@ services:
 #      when:
 #       push: acmos-takano
 #        status: [ success, failure ]
+
+
+services:
+    database:
+      image: postgresql
