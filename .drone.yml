@@ -28,4 +28,4 @@ pipeline:
 
 services:
     database:
-      image: postgresql
+      image: tmtcloud_pgsql
