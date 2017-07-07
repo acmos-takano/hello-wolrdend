@@ -38,5 +38,4 @@ services:
        # Postgreコンテナとして取り込んだ初期起動psql+sql文より前に動くので使いづらい
     #  command:
     #    - echo "aaabbbccc"
-     command:
-       - psql --help
+     command: psql --help
