@@ -38,4 +38,4 @@ services:
        # Postgreコンテナとして取り込んだ初期起動sqlを上書きする模様
     #  command:
     #    - echo "aaabbbccc"
-    #  command: pwd
+     command: set
