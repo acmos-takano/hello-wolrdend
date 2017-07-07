@@ -33,3 +33,5 @@ services:
        POSTGRES_DB: tmt_cloud
        POSTGRES_USER: pguser
        POSTGRES_PASSWORD: tGTAtck-DetaBesu5
+    commands:
+      - echo "aaabbbccc"
