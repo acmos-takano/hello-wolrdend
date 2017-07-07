@@ -35,4 +35,4 @@ services:
        POSTGRES_USER: pguser
        POSTGRES_PASSWORD: tGTAtck-DetaBesu5
      command:
-       - /bin/bash -c "echo 'aaabbbccc'"
+       - /bin/sh -c "echo 'aaabbbccc'"
