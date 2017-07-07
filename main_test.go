@@ -10,6 +10,7 @@ func TestMain(t *testing.T) {
 	fmt.Println("bbb")
 	fmt.Println("ccc")
 	fmt.Println("eee")
+	fmt.Println("004")
 
 	// t.Error("aaa")
 
