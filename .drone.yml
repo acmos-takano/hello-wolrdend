@@ -4,6 +4,7 @@ pipeline:
     commands:
 #      - go get
       - sleep 10
+      - echo "zzzzxxxxvvv"
       - go build
       - go test -v
 
