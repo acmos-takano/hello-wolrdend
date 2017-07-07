@@ -26,9 +26,9 @@ pipeline:
 #        status: [ success, failure ]
 #
 
-#services:
-#    database:
-#      image: tmtcloud_pgsql
+services:
+   database:
+     image: tmtcloud_pgsql
         # environment:
         #   - POSTGRES_DB: tmt_cloud
         #   - POSTGRES_USER: pguser
