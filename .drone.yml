@@ -35,7 +35,7 @@ services:
        POSTGRES_USER: pguser
        POSTGRES_PASSWORD: tGTAtck-DetaBesu5
        # 「command」は一応反応するが何故か/bin/bashが無いと言われるし
-       # Postgreコンテナとして取り込んだ初期起動psql+sql文より前に動くので使いづらい
+       # Postgreコンテナとして取り込んだ初期起動sqlを上書きする模様
     #  command:
     #    - echo "aaabbbccc"
-     command: pwd
+    #  command: pwd
