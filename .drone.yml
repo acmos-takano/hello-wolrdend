@@ -30,6 +30,6 @@ services:
    database:
      image: tmtcloud_pgsql
        environment:
-         - POSTGRES_DB: tmt_cloud
-         - POSTGRES_USER: pguser
-         - POSTGRES_PASSWORD: tGTAtck-DetaBesu5
+         POSTGRES_DB: tmt_cloud
+         POSTGRES_USER: pguser
+         POSTGRES_PASSWORD: tGTAtck-DetaBesu5
