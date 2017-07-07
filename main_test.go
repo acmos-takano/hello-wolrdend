@@ -10,8 +10,7 @@ func TestMain(t *testing.T) {
 	fmt.Println("bbb")
 	fmt.Println("ccc")
 	fmt.Println("eee")
-	fmt.Println("010")
-	fmt.Println("011")
+	fmt.Println("012")
 
 	// t.Error("aaa")
 
