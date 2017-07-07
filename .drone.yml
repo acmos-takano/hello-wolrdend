@@ -24,7 +24,7 @@ pipeline:
 #      when:
 #       push: acmos-takano
 #        status: [ success, failure ]
-
+#
 
 services:
     database:
