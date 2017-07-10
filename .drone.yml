@@ -7,6 +7,7 @@ pipeline:
     commands:
       - echo $HOME
       - echo $GOPATH
+      - echo $GOBIN
       - go get
       - sleep 10
       - go build
