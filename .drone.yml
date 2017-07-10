@@ -1,13 +1,12 @@
 pipeline:
   build:
     image: golang
-    environment:
-      GOPATH: /root
-      GOBIN: $GOPATH/bin
+#    environment:
+#      GOPATH: /root
+#      GOBIN: $GOPATH/bin
     commands:
-      - echo $HOME
       - echo $GOPATH
-      - echo $GOBIN
+      - export GOBIN=$GOPATH/bin
       - go get
       - sleep 10
       - go build
