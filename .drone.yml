@@ -2,7 +2,7 @@ pipeline:
   build:
     image: golang
     environment:
-      GOPATH: $HOME
+      GOPATH: /root
       GOBIN: $GOPATH/bin
     commands:
       - echo $HOME
