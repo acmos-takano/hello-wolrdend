@@ -2,7 +2,7 @@ pipeline:
   build:
     image: golang
     environment:
-      GOBIN: $GOPATH/bin
+      GOBIN: "$GOPATH/bin"
     commands:
       - go get
       - sleep 10
