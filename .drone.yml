@@ -5,6 +5,8 @@ pipeline:
       GOPATH: "$HOME"
       GOBIN: "$GOPATH/bin"
     commands:
+      - echo "$HOME"
+      - echo "$GOPATH"
       - go get
       - sleep 10
       - go build
