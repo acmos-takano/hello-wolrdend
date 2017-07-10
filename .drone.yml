@@ -2,9 +2,8 @@ pipeline:
   build:
     image: golang
     commands:
-#      - go get
+      - go get
       - sleep 10
-      - echo "zzzzxxxxvvv"
       - go build
       - go test -v
 
@@ -31,6 +30,9 @@ services:
    database:
      image: tmtcloud_pgsql
      environment:
+       # DB,USER,PASSWORDまではマスター、ビルド用共通設定
+       # MASTERHOSTはビルド専用パラメータ。コピー元となるマスタDBのIPもしくは認識できるホスト名
+       # MASTERPORTは上記のポート番号
        POSTGRES_DB: tmt_cloud
        POSTGRES_USER: pguser
        POSTGRES_PASSWORD: tGTAtck-DetaBesu5
