@@ -10,7 +10,7 @@ pipeline:
       - go get
       - sleep 10
       - go build
-      - go test -v
+      - go test ./... -v
 
   notify:
 #    image: plugins/drone-slack
