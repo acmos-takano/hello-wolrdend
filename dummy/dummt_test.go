@@ -7,6 +7,7 @@ import (
 
 func TestAaa(t *testing.T) {
 	fmt.Println("aaa")
+	fmt.Println("bbb")
 
 	t.Error("aaa")
 }
