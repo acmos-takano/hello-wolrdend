@@ -8,5 +8,5 @@ import (
 func TestAaa(t *testing.T) {
 	fmt.Println("aaa")
 
-	// t.Error("aaa")
+	t.Error("aaa")
 }
