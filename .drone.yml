@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: golang
+    image: golang:1.8.3-alpine3.6
 #    environment:
 #      GOPATH: /root
 #      GOBIN: $GOPATH/bin
