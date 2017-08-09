@@ -53,3 +53,8 @@ services:
     #  command:
     #    - echo "aaabbbccc"
     #  command: set
+    logging:
+      driver: fluentd
+        options:
+          fluentd-address: docker2-with-compose:24224
+          tag: docker.{{.Name}}/pgsql
