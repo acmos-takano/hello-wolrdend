@@ -11,6 +11,11 @@ pipeline:
       - sleep 10
       - go build
       - go test ./... -v
+    logging:
+      driver: fluentd
+      options:
+        fluentd-address: docker2-with-compose:24224
+        tag: docker.{{.Name}}/worldend
 
   notify:
 #    image: plugins/drone-slack
