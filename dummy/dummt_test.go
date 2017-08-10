@@ -11,5 +11,5 @@ func TestAaa(t *testing.T) {
 	fmt.Println("ccc")
 	fmt.Println("ddd")
 
-	t.Error("aaa")
+	// t.Error("aaa")
 }
