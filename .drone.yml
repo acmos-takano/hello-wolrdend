@@ -10,7 +10,7 @@ pipeline:
       - go get
       - sleep 10
       - go build
-      - go test ./... -v
+      - go test -v -cover ./...
 #    logging:
 #      driver: fluentd
 #      options:
