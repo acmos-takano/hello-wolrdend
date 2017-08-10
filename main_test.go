@@ -13,7 +13,7 @@ func TestMain(t *testing.T) {
 	fmt.Println("019")
 	fmt.Println("dr-test14")
 
-	t.Error("えらーめっせーじをにほんごかしたときは？")
+	// t.Error("えらーめっせーじをにほんごかしたときは？")
 
 }
 

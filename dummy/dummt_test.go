@@ -5,11 +5,11 @@ import (
 	"testing"
 )
 
-func TestAaa(t *testing.T) {
+func TestSaSamp_Aaa(t *testing.T) {
 	fmt.Println("aaa")
 	fmt.Println("bbb")
 	fmt.Println("ccc")
 	fmt.Println("ddd")
 
-	// t.Error("aaa")
+	t.Error("aaa")
 }
