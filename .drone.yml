@@ -11,7 +11,7 @@ pipeline:
       - sleep 10
       - go build
       - go test -v -cover ./...
-      - exit 1
+      - exit 0
 #    logging:
 #      driver: fluentd
 #      options:
