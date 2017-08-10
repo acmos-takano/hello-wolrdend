@@ -11,5 +11,5 @@ func TestSaSamp_Aaa(t *testing.T) {
 	fmt.Println("ccc")
 	fmt.Println("ddd")
 
-	t.Error("aaa")
+	t.Fatalf("aaa\n")
 }
