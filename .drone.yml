@@ -36,20 +36,19 @@ pipeline:
 #        status: [ success, failure ]
 #
 
-services:
-   database:
-     image: tmtcloud_pgsql
-     environment:
-       # DB,USER,PASSWORDまではマスター、ビルド用共通設定
-       # MASTERHOSTはビルド専用パラメータ。コピー元となるマスタDBのIPもしくは認識できるホスト名
-       # MASTERPORTは上記のポート番号
-       POSTGRES_DB: tmt_cloud
-       POSTGRES_USER: pguser
-       POSTGRES_PASSWORD: tGTAtck-DetaBesu5
-       POSTGRES_MASTERHOST: docker2-with-compose
-       POSTGRES_MASTERPORT: 5432
-       # 「command」は一応反応するが何故か/bin/bashが無いと言われるし
-       # Postgreコンテナとして取り込んだ初期起動sqlを上書きする模様
-    #  command:
-    #    - echo "aaabbbccc"
-    #  command: set
+#services:
+#   database:
+#     image: tmtcloud_pgsql
+#     environment:
+#       # DB,USER,PASSWORDまではマスター、ビルド用共通設定
+#       # MASTERHOSTはビルド専用パラメータ。コピー元となるマスタDBのIPもしくは認識できるホスト名
+#       POSTGRES_DB: tmt_cloud
+#     POSTGRES_USER: pguser
+#       POSTGRES_PASSWORD: tGTAtck-DetaBesu5
+#       POSTGRES_MASTERHOST: docker2-with-compose
+#       POSTGRES_MASTERPORT: 5432
+#       # 「command」は一応反応するが何故か/bin/bashが無いと言われるし
+#       # Postgreコンテナとして取り込んだ初期起動sqlを上書きする模様
+#    #  command:
+#    #    - echo "aaabbbccc"
+#    #  command: set
