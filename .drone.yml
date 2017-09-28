@@ -17,7 +17,7 @@ pipeline:
 #        fluentd-address: docker2-with-compose:24224
 #        tag: docker.{{.Name}}/worldend
 
-###  notify:
+  notify:
 #    image: plugins/drone-slack
 #    image: plugins/slack
 #    webhook: https://hooks.slack.com/services/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
@@ -25,11 +25,11 @@ pipeline:
 #    when:
 #      status: [ success, failure ]
 
-##    image: drillster/drone-email
-###    from: takano@acmos.jp
-##    host: mailredirector.newbiz.acmos.jp
-##    port: 25001
-##    skip_verify: true
+    image: drillster/drone-email
+#    from: takano@acmos.jp
+    host: mailredirector.newbiz.acmos.jp
+    port: 25001
+    skip_verify: true
 
 #      recipients:
 #        - takano@acmos.jp
