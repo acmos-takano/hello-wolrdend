@@ -18,6 +18,7 @@ func TestMain(t *testing.T) {
 	fmt.Println("dr8-test5")
 	fmt.Println("dr8-test6")
 	fmt.Println("dr8-test7")
+	fmt.Println("dr8-test8")
 
 	// t.Error("えらーめっせーじをにほんごかしたときは？")
 
