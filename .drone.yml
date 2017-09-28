@@ -26,7 +26,7 @@ pipeline:
 #      status: [ success, failure ]
 
     image: drillster/drone-email
-#    from: takano@acmos.jp
+    from: takano@acmos.jp
     host: mailredirector.newbiz.acmos.jp
     port: 25001
     skip_verify: true
