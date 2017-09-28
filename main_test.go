@@ -6,21 +6,7 @@ import (
 )
 
 func TestMain(t *testing.T) {
-	fmt.Println("aaa")
-	fmt.Println("bbb")
-	fmt.Println("ccc")
-	fmt.Println("eee")
-	fmt.Println("019")
-	fmt.Println("dr8-test1")
-	fmt.Println("dr8-test2")
-	fmt.Println("dr8-test3")
-	fmt.Println("dr8-test4")
-	fmt.Println("dr8-test5")
-	fmt.Println("dr8-test6")
-	fmt.Println("dr8-test7")
-	fmt.Println("dr8-test8")
-	fmt.Println("dr8-test9")
-	fmt.Println("dr8-test10")
+	fmt.Println("test-10")
 
 	// t.Error("えらーめっせーじをにほんごかしたときは？")
 
