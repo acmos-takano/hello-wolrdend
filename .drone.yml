@@ -17,7 +17,7 @@ pipeline:
 #        fluentd-address: docker2-with-compose:24224
 #        tag: docker.{{.Name}}/worldend
 
-  notify:
+###  notify:
 #    image: plugins/drone-slack
 #    image: plugins/slack
 #    webhook: https://hooks.slack.com/services/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
