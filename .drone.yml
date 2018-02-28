@@ -2,7 +2,7 @@ clone:
   git:
     image: plugins/git
     depth: 1
-    
+
 pipeline:
   build:
 #    image: golang:1.8.3-alpine3.6
@@ -33,8 +33,8 @@ pipeline:
 
     image: drillster/drone-email
     from: agent@newbiz.acmos.jp
-    host: mailredirector.newbiz.acmos.jp
-    port: 25001
+    host: docker-product-01
+    port: 25
     skip_verify: true
     when:
       status: [ failure, success ]
