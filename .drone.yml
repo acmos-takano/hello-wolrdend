@@ -1,19 +1,64 @@
+clone:
+  git:
+    image: plugins/git
+    depth: 1
+
 pipeline:
   build:
-    image: golang
+#    image: golang:1.8.3-alpine3.6
+    image: golang:alpine
+#    environment:
+#      GOPATH: /root
+#      GOBIN: $GOPATH/bin
     commands:
-#      - go get
+      - echo $GOPATH
+      - export GOBIN=$GOPATH/bin
+      - go get
+      - sleep 5
       - go build
-      - go test -v
+      - go test -v -cover ./...
+#    logging:
+#      driver: fluentd
+#      options:
+#        fluentd-address: docker2-with-compose:24224
+#        tag: docker.{{.Name}}/worldend
 
   notify:
-      image: drillster/drone-email
-      from: drone@root
-      host: mailredirector.newbiz.acmos.jp
-      port: 25001
-      skip_verify: true
-      recipients:
-        - takano@acmos.jp
-      when:
-        push: acmos-takano
+#    image: plugins/drone-slack
+#    image: plugins/slack
+#    webhook: https://hooks.slack.com/services/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
+#    username: incoming-webhook
+#    when:
+#      status: [ success, failure ]
+
+    image: drillster/drone-email
+    from: agent@newbiz.acmos.jp
+    host: docker-product-01
+    port: 25
+    skip_verify: true
+    when:
+      status: [ failure, success ]
+
+#      recipients:
+#        - takano@acmos.jp
+#      when:
+#       push: acmos-takano
 #        status: [ success, failure ]
+#
+
+#services:
+#   database:
+#     image: tmtcloud_pgsql
+#     environment:
+#       # DB,USER,PASSWORDまではマスター、ビルド用共通設定
+#       # MASTERHOSTはビルド専用パラメータ。コピー元となるマスタDBのIPもしくは認識できるホスト名
+#       POSTGRES_DB: tmt_cloud
+#     POSTGRES_USER: pguser
+#       POSTGRES_PASSWORD: tGTAtck-DetaBesu5
+#       POSTGRES_MASTERHOST: docker2-with-compose
+#       POSTGRES_MASTERPORT: 5432
+#       # 「command」は一応反応するが何故か/bin/bashが無いと言われるし
+#       # Postgreコンテナとして取り込んだ初期起動sqlを上書きする模様
+#    #  command:
+#    #    - echo "aaabbbccc"
+#    #  command: set
