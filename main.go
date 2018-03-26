@@ -2,14 +2,17 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"time"
 )
 
 func main() {
 
-	a := 100
-	hellandheaven := "string"
-	fmt.Println(a)
-	fmt.Println(hellandheaven)
-	fmt.Println(hellandheaven)
+	fmt.Println("test")
+	fmt.Println("test2")
 
+	time := time.Duration(100) * time.Second
+
+	fmt.Println(time)
+	os.Exit(0)
 }
