@@ -15,4 +15,6 @@ func main() {
 
 	fmt.Println(time)
 	os.Exit(0)
+
+	// test bot 01
 }

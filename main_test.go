@@ -7,7 +7,7 @@ import (
 
 func TestMain(t *testing.T) {
 
-  fmt.Println("test-10")
+	fmt.Println("test-10")
 
 	// t.Error("えらーめっせーじをにほんごかしたときは？")
 
@@ -22,7 +22,5 @@ func TestMain2(t *testing.T) {
 	fmt.Println("dr-test14")
 	fmt.Println("dr081-test1")
 
-
 	// t.Error("aaa")
-
-
+}
